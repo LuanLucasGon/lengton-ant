@@ -1,0 +1,14 @@
+<div class="controls">
+  <button (click)="simulation.togglePlay()">{{ simulation.running() ? 'Pausar' : 'Continuar' }}</button>
+  <button (click)="simulation.reset()">Reiniciar</button>
+  <label>
+    Velocidade ({{ simulation.speed() }} passos/s)
+    <input
+      type="range"
+      min="1"
+      max="1000"
+      [value]="simulation.speed()"
+      (input)="simulation.speed.set($any($event.target).valueAsNumber)"
+    />
+  </label>
+</div>

@@ -1,0 +1,21 @@
+<header class="header">
+  <h1 class="title">lengton.io</h1>
+  <button class="info-button" (click)="simulation.toggleInfo()" aria-label="O que é a Formiga de Langton?">?</button>
+
+  @if (simulation.showInfo()) {
+    <div class="info-popover">
+      <p>
+        A <strong>Formiga de Langton</strong> é um autômato celular criado por Chris Langton em 1986. Numa grade de
+        quadrados, uma formiga segue duas regras simples a cada passo:
+      </p>
+      <ul>
+        <li>Em um quadrado <strong>apagado</strong>: acende o quadrado, vira à direita e anda para frente.</li>
+        <li>Em um quadrado <strong>aceso</strong>: apaga o quadrado, vira à esquerda e anda para frente.</li>
+      </ul>
+      <p>
+        Apesar da simplicidade, depois de milhares de passos caóticos a formiga constrói uma "estrada" que se repete
+        e se estende infinitamente.
+      </p>
+    </div>
+  }
+</header>

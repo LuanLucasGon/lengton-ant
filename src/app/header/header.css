@@ -1,0 +1,65 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1c22;
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.info-button {
+  position: absolute;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: #2a2d35;
+  color: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.info-button:hover {
+  background: #363a44;
+}
+
+.info-popover {
+  position: fixed;
+  top: 64px;
+  right: 16px;
+  width: 320px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #1a1c22;
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.info-popover p {
+  margin: 0 0 10px;
+}
+
+.info-popover ul {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
